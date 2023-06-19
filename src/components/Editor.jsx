@@ -2,7 +2,7 @@
 const Editor = ({ input, handleChange }) => {
   
   return (
-    <div  className="pane editor-container">
+    <div  className="editor-container">
       <textarea 
         id="editor" 
         onChange={handleChange}

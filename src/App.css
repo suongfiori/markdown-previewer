@@ -8,7 +8,7 @@ body {
   font-family: 'Karla', sans-serif;
   font-size: 16px;
   font-weight: 700;
-  line-height: 1.4;
+  line-height: 1.2;
 }
 
 body::before {
@@ -21,7 +21,7 @@ body::before {
   height: 100%;
   width: 100%;
   z-index: -1;
-  background-color: #f8f8f8; /* in case bg img fails to load */
+  background-color: #f8f8f8; /* if bg image fails to load */
   background-image: linear-gradient(
       115deg,
       rgba(64, 64, 199, 0.8),
@@ -39,7 +39,7 @@ body::before {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding: 20px;
+  margin: 0 0.5rem;
 }
 
 .header {
@@ -52,6 +52,7 @@ body::before {
 }
 .split {
   display: flex;
+  width: calc(100vw - 2rem);
 }
 
 textarea {
@@ -71,7 +72,7 @@ textarea {
   border-radius: 4px;
   background: whitesmoke;
   padding: 1rem;
-  min-width: 100%;
+  width: 100%;
   margin: 1rem;
 }
 
@@ -80,6 +81,9 @@ footer {
   margin: 1rem;
   text-align: center;
   color:#f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer > a {
@@ -92,11 +96,11 @@ footer > a {
 @media only screen and (max-width: 600px) {
   .container {
     flex-direction: column; /* Stack elements vertically */
+    /* width: 100vw; */
   }
 
   .split {
-    display: block; 
-    width: 100%;
+    display: block;    
   }
 
   textarea {

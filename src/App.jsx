@@ -3,8 +3,9 @@ import './App.css';
 import Editor from './components/Editor.jsx';
 import Preview from './components/Preview.jsx';
 import Header from './components/Header.jsx';
-import { marked } from 'marked';
 import Footer from './components/Footer.jsx';
+import { marked } from 'marked';
+
 
 const defaultInput = `
 # This is a H1
