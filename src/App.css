@@ -96,7 +96,7 @@ footer > a {
 
   .split {
     display: block; 
-    width: cal(100vw - 10px);
+    width: 100%;
   }
 
   textarea {
@@ -108,7 +108,7 @@ footer > a {
     width: 100%;
   }
   .header h1 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 }
 
