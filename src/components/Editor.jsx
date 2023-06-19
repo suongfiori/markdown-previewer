@@ -7,6 +7,7 @@ const Editor = ({ input, handleChange }) => {
         id="editor" 
         onChange={handleChange}
         value={input}
+        className="text"
       />
     </div>
   )

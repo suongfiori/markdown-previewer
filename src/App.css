@@ -36,22 +36,22 @@ body::before {
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
   padding: 20px;
-  box-sizing: border-box;
 }
 
 .header {
   text-align: center;
   color: white;
-  font-size: clamp(0.8rem, 1.5vw, 1.5rem);
-  flex-shrink: 0;
+  font-size: clamp(0.5rem, -0.875rem + 6.333vw, 1rem);
 }
-
+.h1 {
+  font-size: clamp(0.5rem, -0.875rem + 6.333vw, 1rem)
+}
 .split {
   display: flex;
-  width: calc(100vw - 60px);
 }
 
 textarea {
@@ -67,12 +67,45 @@ textarea {
   border-radius: 4px;
   background: whitesmoke;
   padding: 1rem;
+  min-width: 100%;
+  margin: 1rem;
 }
 
 footer {
+  width: 100%;
   margin: 1rem;
   text-align: center;
   color:#f8f8f8;
-  flex-shrink: 0;
+}
+
+footer > a {
+  cursor: pointer;
+  text-decoration: none;
+  color:#f8f8f8;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column; /* Stack elements vertically */
+    width: 100%;
+  }
+
+  .split {
+    display: block; 
+  }
+
+  textarea {
+    height: 200px;
+  }
+
+  .editor-container,
+  .preview-container {
+    width: 100%;
+    margin: 0.5rem; 
+  }
+  .text {
+    font-size: clamp(0.6rem, -0.875rem + 8.333vw, 1rem)
+  }
 }
 

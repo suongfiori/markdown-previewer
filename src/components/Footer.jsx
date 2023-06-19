@@ -1,8 +1,9 @@
 
 const Footer = () => {
     const year = new Date().getFullYear()
+    const githubUrl = "https://github.com/suongfiori"
   
-    return <footer>{`Copyright © SuongFiori ${year}`}</footer>
+    return <footer>Made by © <a href={githubUrl}> SuongFiori </a> - {year}</footer>
   }
 
 export default Footer

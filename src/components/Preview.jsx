@@ -5,7 +5,7 @@ const Preview = ({ convertedHTML }) => {
     <div
       id="preview" 
       dangerouslySetInnerHTML={{ __html: convertedHTML }} 
-      className="pane preview-container"
+      className="text preview-container"
     >   
     </div>
   )
