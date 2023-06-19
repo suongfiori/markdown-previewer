@@ -61,6 +61,10 @@ textarea {
   background: whitesmoke;
 }
 
+.text {
+  font-size: clamp(0.6rem, -0.875rem + 6.333vw, 1rem)
+}
+
 .editor-container,
 .preview-container {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
@@ -88,24 +92,24 @@ footer > a {
 @media only screen and (max-width: 600px) {
   .container {
     flex-direction: column; /* Stack elements vertically */
-    width: 100%;
   }
 
   .split {
     display: block; 
+    width: 100vw;
   }
 
   textarea {
-    height: 200px;
+    height: 150px;
   }
 
   .editor-container,
   .preview-container {
     width: 100%;
-    margin: 0.5rem; 
   }
-  .text {
-    font-size: clamp(0.6rem, -0.875rem + 8.333vw, 1rem)
+  .header h1 {
+    margin: 0.5rem;
+    font-size: 1rem;
   }
 }
 
